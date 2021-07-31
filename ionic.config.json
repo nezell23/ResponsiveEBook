@@ -1,5 +1,7 @@
 {
   "name": "eBook",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

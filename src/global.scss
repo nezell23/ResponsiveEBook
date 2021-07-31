@@ -24,3 +24,38 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* Importing Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Nunito&family=Playfair+Display:wght@500&family=Viaoda+Libre&display=swap');
+
+.bookTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+
+.header {
+    margin: 2%;
+    font-family: 'Playfair Display', serif;
+}
+
+.titleChapter {
+    font-family: 'Nunito', sans-serif;
+}
+
+.titleName {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: xx-large;
+}
+
+.content {
+    margin: 5%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}

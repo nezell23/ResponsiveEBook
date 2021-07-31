@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'toc',
+    loadChildren: () => import('./toc/toc.module').then( m => m.TocPageModule)
+  },
+  {
+    path: 'chapter1',
+    loadChildren: () => import('./chapter1/chapter1.module').then( m => m.Chapter1PageModule)
+  },
+  {
+    path: 'chapter2',
+    loadChildren: () => import('./chapter2/chapter2.module').then( m => m.Chapter2PageModule)
+  },
+  {
+    path: 'chapter3',
+    loadChildren: () => import('./chapter3/chapter3.module').then( m => m.Chapter3PageModule)
+  },
 ];
 
 @NgModule({

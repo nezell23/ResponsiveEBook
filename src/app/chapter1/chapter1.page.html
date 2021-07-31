@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row class="header">
+      <ion-col size="9">
+        Chapter {{chapter1.chapterNumber}} | {{chapter1.chapterName}}
+      </ion-col>
+      <ion-col size="3" class="ion-text-right">
+        {{chapter1.pageNumber}}
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <br>
+  <div class="ion-padding ion-text-center">
+    <div class="titleChapter">Chapter {{chapter1.chapterNumber}}</div>
+    <div class="titleName">{{chapter1.chapterName}}</div>
+    <br>
+    <img src="http://lorempixel.com/400/200/">
+  </div>
+
+  <div class="content ion-text-justify">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mauris lectus, gravida bibendum semper in,
+      vestibulum porttitor odio. Phasellus convallis magna enim, nec congue enim iaculis a. Morbi sit amet tortor id
+      augue euismod rhoncus vitae accumsan quam. Vivamus scelerisque arcu vel consectetur gravida. Nam pellentesque
+      lectus arcu, a mollis felis suscipit et. Vivamus vehicula sit amet sem vel venenatis. Morbi metus risus, dictum et
+      eros non, elementum gravida arcu. Nulla facilisi. In hac habitasse platea dictumst.</p>
+
+    <p>Aliquam pellentesque augue leo, eu bibendum elit blandit non. Nullam a nunc neque. Donec et mauris commodo nulla
+      dictum ullamcorper. Nam ut augue dui. In pretium lectus et libero condimentum tincidunt. Sed sed diam sit amet
+      ante varius pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris a tortor
+      ullamcorper rutrum. Phasellus malesuada tortor sed sollicitudin consequat. Suspendisse mattis in metus sed
+      consectetur. Aliquam condimentum pharetra orci, vitae lobortis mauris hendrerit ullamcorper.</p>
+  </div>
+  <br>
+  <br>
+
+  <ion-footer class="footer">
+    <ion-toolbar>
+      <ion-row>
+        <ion-col size="2">
+          <ion-button color="success" size="small" expand="block" [routerDirection]="'root'" [routerLink]="['/toc']">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="8">
+          <ion-button color="primary" size="small" expand="block" [routerDirection]="'root'" [routerLink]="['/toc']">
+            Table
+            of Contents</ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button color="success" size="small" expand="block" [routerDirection]="'root'"
+            [routerLink]="['/chapter2']">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
